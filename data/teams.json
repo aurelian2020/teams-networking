@@ -1,0 +1,20 @@
+[
+  {
+    "promotion": "won8",
+    "members": "Alexandru, Odobescu",
+    "project": "Bookstore",
+    "url": "https://bookstore.io"
+  },
+  {
+    "promotion": "won9",
+    "members": "Paul, Mihai",
+    "project": "Broker",
+    "url": "https://broker.io"
+  },
+  {
+    "promotion": "won10",
+    "members": "Radu, Elena",
+    "project": "Patiserie",
+    "url": "https://patiserie.io"
+  }
+]
