@@ -20,13 +20,19 @@ function loadTeams() {
 }
 
 function teamsToTable(teams) {
-  var teamsHTML = "";
-  // formateaza din json in html
-  teams.forEach(function (team) {
-    teamsHTML += teamToRow(team);
+  // var teamsHTML = "";
+  // // formateaza din json in html
+  // teams.forEach(function (team) {
+  //   teamsHTML += teamToRow(team);
+  // });
+  var teamsHTML = teams.map(function (team) {
+    //console.info(team);
+    return teamToRow(team);
   });
+  //console.warn(teamsHTML);
+
   // afisare in table body
-  document.querySelector("table tbody").innerHTML = teamsHTML;
+  document.querySelector("table tbody").innerHTML = teamsHTML.join("");
 }
 
 loadTeams();
