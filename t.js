@@ -1,10 +1,5 @@
-function displayTeams(teams) {
-    //console.warn("display", teams);
-
-    var teamsHTML = "";
-    teams.forEach(function (team) {
-      //console.info(team.promotion);
-        teamsHTML += `
+function getTeamHTML(team){
+   return `
            <tr>
                 <td>${team.promotion}</td>
                 <td>${team.members}</td>
@@ -13,7 +8,16 @@ function displayTeams(teams) {
                   <a href="${team.url}">open</a>
                 </td>
                 <td>x e</td>
-            </tr>`;
+            </tr>`
+}
+
+function displayTeams(teams) {
+    //console.warn("display", teams);
+
+    var teamsHTML = "";
+    teams.forEach(function (team) {
+      //console.info(team.promotion);
+        teamsHTML += getTeamHTML(team);
     });
     //console.warn(teamsHTML);
 
